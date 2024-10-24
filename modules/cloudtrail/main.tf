@@ -5,4 +5,5 @@ resource "aws_cloudtrail" "insecure-logging" {
   enable_log_file_validation = true
   is_multi_region_trail = true
   kms_key_id = 123
+  cloud_watch_logs_group_arn = arn
 }
